@@ -7,6 +7,9 @@ zuul:
     system:
       path: /system/**
       service-id: system-service
+    course:
+      path: /course/**
+      service-id: course-service
 
 eureka:
   client:
