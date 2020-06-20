@@ -28,3 +28,8 @@ eureka:
 spring:
   application:
     name: zuul-server
+
+#网关超时配置
+ribbon:
+  ReadTimeout: 6000
+  SocketTimeout: 6000
