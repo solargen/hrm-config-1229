@@ -13,6 +13,9 @@ zuul:
     file:
       path: /file/**
       service-id: file-service
+    cache:
+      path: /cache/**
+      service-id: cache-service
 
 eureka:
   client:
