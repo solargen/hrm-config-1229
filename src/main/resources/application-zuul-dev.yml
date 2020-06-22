@@ -31,8 +31,8 @@ spring:
   servlet:
       multipart:
         enabled: true
-        max-file-size: 10*1024*1024  #单个文件的最大上限
-        max-request-size: 10*1024*1024 #单个请求的文件总大小上限
+        max-file-size: 10240000  #单个文件的最大上限
+        max-request-size: 10240000 #单个请求的文件总大小上限
 
 #网关超时配置
 ribbon:
