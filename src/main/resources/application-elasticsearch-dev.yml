@@ -1,0 +1,17 @@
+server:
+  port: 8003
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #服务注册的地址
+  instance:
+    instance-id: elasticsearch-service:8003
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: elasticsearch-service
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300

@@ -16,6 +16,9 @@ zuul:
     cache:
       path: /cache/**
       service-id: cache-service
+    elasticsearch:
+      path: /elasticsearch/**
+      service-id: elasticsearch-service
 
 eureka:
   client:
