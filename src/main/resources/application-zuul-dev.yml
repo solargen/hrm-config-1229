@@ -22,6 +22,9 @@ zuul:
     user:
       path: /user/**
       service-id: user-service
+    sms:
+      path: /sms/**
+      service-id: sms-service
 
 eureka:
   client:
