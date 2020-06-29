@@ -1,0 +1,30 @@
+server:
+  port: 9003
+
+#数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///hrm-user?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+  application:
+      name: user-service
+
+#eureka客户端配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #服务注册的地址
+  instance:
+    instance-id: user-service:9003
+    prefer-ip-address: true
+
+logging:
+  level:
+    cn.itsource.hrm.mapper: debug
+hrm:
+  swagger:
+    title: 用户服务
+    description: 用户服务接口描述
+

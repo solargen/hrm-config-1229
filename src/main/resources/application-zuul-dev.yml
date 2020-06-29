@@ -19,6 +19,9 @@ zuul:
     elasticsearch:
       path: /elasticsearch/**
       service-id: elasticsearch-service
+    user:
+      path: /user/**
+      service-id: user-service
 
 eureka:
   client:
